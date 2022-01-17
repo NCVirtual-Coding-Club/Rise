@@ -7,15 +7,16 @@
 
     <fragment
         android:id="@+id/navigation_learn"
-        android:name="com.example.rise.ui.home.HomeFragment"
+        android:name="com.example.rise.ui.learn.LearnFragment"
         android:label="@string/title_learn"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_learn" />
 
     <fragment
         android:id="@+id/navigation_agenda"
-        android:name="com.example.rise.ui.dashboard.DashboardFragment"
+        android:name="com.example.rise.ui.agenda.AgendaFragment"
         android:label="@string/title_agenda"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_agenda" />
+
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.example.rise.ui.home.HomeFragment"
@@ -24,13 +25,13 @@
 
     <fragment
         android:id="@+id/navigation_activities"
-        android:name="com.example.rise.ui.dashboard.DashboardFragment"
+        android:name="com.example.rise.ui.activities.ActivitiesFragment"
         android:label="@string/title_activities"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_activities" />
 
     <fragment
         android:id="@+id/navigation_support"
-        android:name="com.example.rise.ui.notifications.NotificationsFragment"
+        android:name="com.example.rise.ui.support.SupportFragment"
         android:label="@string/title_support"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_support" />
 </navigation>
