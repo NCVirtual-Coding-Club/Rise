@@ -5,4 +5,13 @@
     <string name="title_home">Home</string>
     <string name="title_activities">Activities</string>
     <string name="title_support">Support</string>
+    <string name="support_suicidehotline_title">Suicide Hotline</string>
+    <string name="support_suicidehotline_description">Suicide-related assistance.</string>
+    <string name="support_suicidehotline_phonenumber">1-800-273-8255</string>
+    <string name="support_substance_title">Substance Abuse Hotline</string>
+    <string name="support_substance_description">Drug and other substance-related assistance.</string>
+    <string name="support_substance_phonenumber">1-877-726-4727</string>
+    <string name="support_emergency_title">Local Emergency Services</string>
+    <string name="support_emergency_description">Other emergency assistance.</string>
+    <string name="support_emergency_phonenumber">911</string>
 </resources>
