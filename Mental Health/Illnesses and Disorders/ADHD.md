@@ -12,3 +12,12 @@ Currently, there is no specific treatment for ADHD. However, there are several o
 
 ## Living with ADHD
 Although there is no cure for ADHD, there are several options to reduce its impact on everyday living. Limiting distractions (such as turning off your phone), using organization tools, exercising, and meditating can all help reduce the symptoms of ADHD ("ADHD" [Nemours KidsHealth]). Informing friends and teachers about your condition may also be beneficial as may be able to help manage your symptoms.
+
+## Citations and Additional Resources
+ADHD: Tips to Try (for Teens) - Nemours KidsHealth. https://kidshealth.org/en/teens/adhd-tips.html. Accessed 15 Jan. 2022.
+
+Attention Deficit Hyperactivity Disorder | ADHD | ADD | MedlinePlus. https://medlineplus.gov/attentiondeficithyperactivitydisorder.html. Accessed 15 Jan. 2022.
+
+Attention Deficit-Hyperactivity Disorder Information Page | National Institute of Neurological Disorders and Stroke. https://www.ninds.nih.gov/Disorders/All-Disorders/Attention-Deficit-Hyperactivity-Disorder-Information-Page. Accessed 15 Jan. 2022.
+
+“Symptoms and Diagnosis of ADHD | CDC.” Centers for Disease Control and Prevention, 21 Sept. 2020, https://www.cdc.gov/ncbddd/adhd/diagnosis.html.
