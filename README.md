@@ -15,3 +15,6 @@
     - Stress
     - Coping and Loss
     - Suicide
+
+## Notes
+All pages need to include a disclaimer that the content on this application does not replace medical advice.
