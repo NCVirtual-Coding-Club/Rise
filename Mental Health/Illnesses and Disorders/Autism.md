@@ -1,9 +1,9 @@
 # Autism
 ## What is Autism
-Autism (known as Autism spectrum disorder or ASD) is a developmental disorder that affects children and adults that begins in childhood and lasts throughout a person’s life ("Autism" [NINDS]). Autism effects how a person thinks, how they communicate, how they learn, and how they behave. ("Autism" [NINDS])
+Autism (known as Autism spectrum disorder or ASD) is a developmental disorder that affects children and adults that begins in childhood and lasts throughout a person’s life ("Autism" [MedlinePlus]). Autism effects how a person thinks, how they communicate, how they learn, and how they behave. ("Autism" [MedlinePlus])
 
 ## Symptoms
-Because Autism has a wide range of symptoms, it is often referred to as a "spectrum" disorder. It is important to recognize that not everyone with Autism has the related symptoms. Some of the general symptoms are listed below ("Autism" [NINDS]).
+Because Autism has a wide range of symptoms, it is often referred to as a "spectrum" disorder. It is important to recognize that not everyone with Autism has the related symptoms. Some of the general symptoms are listed below ("Autism" [MedlinePlus]).
 
 ### Communication and Interaction
 Most of the early symptoms of Autism regarding communication and interaction are related to general developmental shortcomings. Examples include avoiding eye contact, failure to display facial expressions, showing little interest in peers, and not being able to speak or understand others ("Signs" [CDC]).
@@ -31,13 +31,21 @@ Like many mental illnesses, there is neither a cure nor a single standard treatm
 
 # Citations and Additional Resources
 Asperger Syndrome Information Page | National Institute of Neurological Disorders and Stroke. https://www.ninds.nih.gov/Disorders/All-Disorders/Asperger-Syndrome-Information-Page. Accessed 15 Jan. 2022.
+
 “Autism.” National Institute of Environmental Health Sciences, https://www.niehs.nih.gov/health/topics/conditions/autism/index.cfm. Accessed 15 Jan. 2022.
 Autism Spectrum Disorder. National Library of Medicine, https://medlineplus.gov/autismspectrumdisorder.html. Accessed 15 Jan. 2022.
+
 “---.” National Institute of Mental Health (NIMH), https://www.nimh.nih.gov/health/publications/autism-spectrum-disorder. Accessed 15 Jan. 2022.
 “Autism Spectrum Disorder (ASD).” Https://Www.Nichd.Nih.Gov/, https://www.nichd.nih.gov/health/topics/autism. Accessed 15 Jan. 2022.
+
 Autism Spectrum Disorder Fact Sheet | National Institute of Neurological Disorders and Stroke. https://www.ninds.nih.gov/Disorders/Patient-Caregiver-Education/Fact-Sheets/Autism-Spectrum-Disorder-Fact-Sheet. Accessed 15 Jan. 2022.
+
 CDC. “Signs & Symptoms | Autism Spectrum Disorder (ASD) | NCBDDD | CDC.” Centers for Disease Control and Prevention, 29 Mar. 2021, https://www.cdc.gov/ncbddd/autism/signs.html.
+
 Commissioner, Office of the. “Be Aware of Potentially Dangerous Products and Therapies That Claim to Treat Autism.” FDA, Dec. 2021. www.fda.gov, https://www.fda.gov/consumers/consumer-updates/be-aware-potentially-dangerous-products-and-therapies-claim-treat-autism.
+
 Is There a Connection Between Vaccines and Autism? (For Parents) - Nemours KidsHealth. https://kidshealth.org/en/parents/autism-studies.html. Accessed 15 Jan. 2022.
+
 Therapies for Children With Autism Spectrum Disorder | Effective Health Care (EHC) Program. https://effectivehealthcare.ahrq.gov/products/autism-update/consumer. Accessed 15 Jan. 2022.
+
 “What Are the Treatments for Autism?” Https://Www.Nichd.Nih.Gov/, https://www.nichd.nih.gov/health/topics/autism/conditioninfo/treatments. Accessed 15 Jan. 2022.
