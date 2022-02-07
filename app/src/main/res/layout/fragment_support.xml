@@ -123,6 +123,7 @@
                 android:layout_height="15dp" />
 
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_support_emergency"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:checkable="true"
