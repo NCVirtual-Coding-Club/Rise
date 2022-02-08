@@ -16,3 +16,13 @@ To open the folder in Android Studio, in Android Studio, click `File`, `Open`, a
 ![image](https://user-images.githubusercontent.com/39242954/152127111-16b01b1c-8881-443a-94d8-6f25fceee408.png)
 
 After a few minutes, the project will be available in Android Studio.
+
+## Project Syntax
+### IDs: 
+Syntax: `@+id/<component_title>_<activity_title>_<name>`
+
+Example: `@+id/card_home_recommendedActivities`
+### Strings: 
+Syntax: `@string/<activity_title>_<group>_<string_usage>`
+
+Example: `@string/support_emergency_description`
