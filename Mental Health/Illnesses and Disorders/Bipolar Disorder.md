@@ -17,7 +17,7 @@ Less severe than Bipolar I and Bipolar II, individuals with this type of bipolar
 ## Symptoms
 Symptoms of bipolar disorder often vary depending on the type of bipolar disorder and the individual, but mood swings often share similar characteristics ("Bipolar Disorder" [MedlinePlus]). Mixed episodes are also possible and include symptoms of both a manic and depressive episode ("Bipolar Disorder" [MedlinePlus]).
 
-### Manic Episode Symptoms ("Bipolar Disorder" [MedlinePlus]).
+### Manic Episode Symptoms ("Bipolar Disorder" [MedlinePlus]).  
 - Feeling very up, high, or elated
 - Feeling jumpy or wired, more active than usual
 - Having a very short temper or seeming extremely irritable
@@ -48,7 +48,7 @@ Psychotherapy can help "recognize and change troubling emotions, thoughts, and b
 ### Other Treatments
 Other treatments include electroconvulsive therapy, aerobic exercise, and mood/symptom tracking ("Bipolar Disorder" [MedlinePlus]).
 
-# Citations and Additional Resources
+## Citations and Additional Resources
 Bipolar Disorder. National Library of Medicine, https://medlineplus.gov/bipolardisorder.html. Accessed 15 Jan. 2022.
 
 “---.” National Institute of Mental Health (NIMH), https://www.nimh.nih.gov/health/topics/bipolar-disorder. Accessed 15 Jan. 2022.
