@@ -5,4 +5,25 @@
     <string name="title_home">Home</string>
     <string name="title_activities">Activities</string>
     <string name="title_support">Support</string>
+    <string name="support_suicidehotline_title">Suicide Hotline</string>
+    <string name="support_suicidehotline_description">Suicide-related assistance.</string>
+    <string name="support_suicidehotline_phonenumber">1–800–273-8255</string>
+    <string name="support_substance_title">Substance Abuse Hotline</string>
+    <string name="support_substance_description">Drug and other substance-related assistance.</string>
+    <string name="support_substance_phonenumber">1–877-726-4727</string>
+    <string name="support_emergency_title">Local Emergency Services</string>
+    <string name="support_emergency_description">Other emergency assistance.</string>
+    <string name="support_emergency_phonenumber">911</string>
+    <string name="home_greeting_greeting">Good evening Jonathan</string>
+    <string name="home_greeting_quote">“Be yourself; everyone else is already taken.”</string>
+    <string name="home_greeting_quoteAuthor">Oscar Wilde</string>
+    <string name="home_alertCovid19_title">Alert - Outbreak</string>
+    <string name="home_alertCovid19_description">Coronavirus disease (COVID-19) pandemic</string>
+    <string name="home_alertCovid19_button">Learn More</string>
+    <string name="home_agenda_title">Agenda</string>
+    <string name="LOREMPISUM">Lorem ipsum dolor sit amet</string>
+    <string name="home_activities_title">Recommended Activities</string>
+    <string name="home_healthEvaluation_title">Health Evaluation</string>
+    <string name="home_healthEvaluation_description">Take the health evaluation for a personalized experience.</string>
+    <string name="home_healthEvaluation_button">Take Health Evaluation</string>
 </resources>
