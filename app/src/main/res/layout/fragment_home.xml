@@ -20,7 +20,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:scrollIndicators="right">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp" />
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/card_home_greeting"
@@ -28,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="7dp"
                 android:checkable="true"
-                android:clickable="true"
+                android:clickable="false"
                 android:focusable="true"
                 app:cardElevation="3dp"
                 app:cardMaxElevation="3dp"
@@ -39,6 +44,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:clickable="false"
                     android:orientation="vertical"
                     android:padding="16dp">
 
@@ -74,7 +80,7 @@
                 android:layout_marginTop="7dp"
                 android:layout_marginBottom="7dp"
                 android:checkable="true"
-                android:clickable="true"
+                android:clickable="false"
                 android:focusable="true"
                 app:cardElevation="3dp"
                 app:cardMaxElevation="3dp">
@@ -84,6 +90,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:clickable="false"
                     android:orientation="vertical"
                     android:padding="16dp">
 
@@ -128,7 +135,7 @@
                 android:layout_marginTop="7dp"
                 android:layout_marginBottom="7dp"
                 android:checkable="true"
-                android:clickable="true"
+                android:clickable="false"
                 android:focusable="true"
                 app:cardElevation="3dp"
                 app:cardMaxElevation="3dp">
@@ -138,6 +145,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:clickable="false"
                     android:orientation="vertical"
                     android:padding="16dp">
 
@@ -182,7 +190,7 @@
                 android:layout_marginTop="7dp"
                 android:layout_marginBottom="7dp"
                 android:checkable="true"
-                android:clickable="true"
+                android:clickable="false"
                 android:focusable="true"
                 app:cardElevation="3dp"
                 app:cardMaxElevation="3dp">
@@ -192,6 +200,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:clickable="false"
                     android:orientation="vertical"
                     android:padding="16dp">
 
@@ -232,7 +241,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="7dp"
                 android:checkable="true"
-                android:clickable="true"
+                android:clickable="false"
                 android:focusable="true"
                 app:cardElevation="3dp"
                 app:cardMaxElevation="3dp">
@@ -274,6 +283,10 @@
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
 
         </LinearLayout>
     </ScrollView>
