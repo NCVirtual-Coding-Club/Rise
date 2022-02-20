@@ -1,12 +1,16 @@
 package com.example.rise.ui.home;
 
+import static com.example.rise.R.id.home_alertCovid19_learnMore;
 import static com.example.rise.R.id.text_home_greetingWelcomeText;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -14,6 +18,7 @@ import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.rise.R;
 import com.example.rise.databinding.FragmentHomeBinding;
 
 import java.time.LocalDateTime;
@@ -71,8 +76,19 @@ public class HomeFragment extends Fragment {
         }
         // End
 
-    }
 
+        // Opens WHO Covid Dashboard after clicking home_alertCovid19_learnMore
+        // Start
+        Button cdcButton = (Button) view.findViewById(home_alertCovid19_learnMore);
+        cdcButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.who.int/emergencies/diseases/novel-coronavirus-2019"));
+                startActivity(browserIntent);
+            }
+        });
+        // End
+
+    }
 
     @Override
     public void onDestroyView() {
