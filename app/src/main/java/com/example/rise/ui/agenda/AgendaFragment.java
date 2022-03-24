@@ -24,9 +24,11 @@ import com.example.rise.databinding.FragmentActivitiesBinding;
 import com.example.rise.databinding.FragmentAgendaBinding;
 
 import java.lang.reflect.Array;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class AgendaFragment extends Fragment {
 
@@ -41,13 +43,6 @@ public class AgendaFragment extends Fragment {
         binding = FragmentAgendaBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textDashboard;
-        agendaViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
         return root;
     }
 
@@ -55,7 +50,7 @@ public class AgendaFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        updateList();
+        // updateList();
 
 
     }
@@ -66,6 +61,7 @@ public class AgendaFragment extends Fragment {
         binding = null;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public void updateList() {
         // Get Input from database
 
@@ -82,8 +78,15 @@ public class AgendaFragment extends Fragment {
          */
 
         // I have no idea what I am doing lists
+
+
+
+
         ArrayList<ArrayList> plannedList = new ArrayList<>();
         ArrayList<ArrayList> unplannedList = new ArrayList<>();
+
+        // Planned List {date, startTime, endTime, name}
+        // Implanned List {dueDate, dueTime, duration, name}
 
         int[] timeTable = {0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400};
 
@@ -100,35 +103,76 @@ public class AgendaFragment extends Fragment {
 
         // Test Data
         ArrayList<String> testArrayList  = new ArrayList<>();
+        testArrayList.add("30");
         testArrayList.add("eventType");
-        testArrayList.add("monday");
-        testArrayList.add("5:00");
+        testArrayList.add("0500");
         testArrayList.add("2");
-        sundayList.add(testArrayList);
-        mondayList.add(testArrayList);
-        tuesdayList.add(testArrayList);
-        wednesdayList.add(testArrayList);
-        thursdayList.add(testArrayList);
-        fridayList.add(testArrayList);
-        saturdayList.add(testArrayList);
+        unplannedList.add(testArrayList);
 
-        // Sorting Data
-        for (int i : timeTable) { // For each
+        ArrayList<String> testArrayListTwo  = new ArrayList<>();
+        testArrayListTwo.add("30");
+        testArrayListTwo.add("eventType");
+        testArrayListTwo.add("2200");
+        testArrayListTwo.add("2");
+        unplannedList.add(testArrayListTwo);
 
+        ArrayList<String> testArrayListThree  = new ArrayList<>();
+        testArrayListThree.add("42069");
+        testArrayListThree.add("eventType");
+        testArrayListThree.add("2400");
+        testArrayListThree.add("2");
+        unplannedList.add(testArrayListThree);
+
+
+
+
+        int currentDate = 23;
+        ArrayList<Double> daysUntil  = new ArrayList<>();
+        int unplannedListLength = unplannedList.size();
+
+        for (int i = 0; i<unplannedListLength; i++) {
+            unplannedList.get(i).set(0, unplannedList.get(i).get(0) + "." + unplannedList.get(i).get(2));
         }
 
-        /*
-        Check Planned List first
-         */
-
-        while (true) {
-
-
+        // Creates an array that stores the time until the due date
+        for (int i = 0; i<unplannedListLength; i++) {
+            double currentDueDate = Double.parseDouble(String.valueOf(unplannedList.get(i).get(0))) - currentDate;
+            daysUntil.add(currentDueDate);
         }
 
+        System.out.println("Old: " + daysUntil);
+        System.out.println("Old: " + unplannedList);
+        int daysUntilLength = daysUntil.size();
+
+        for (int i = 1; i < daysUntilLength; i++) {
+            double current = Double.parseDouble(String.valueOf(daysUntil.get(i)));
+            ArrayList<String> currentArray = unplannedList.get(i);
+            int j = i -1;
+            while (j>= 0 && Double.parseDouble(String.valueOf(daysUntil.get(j))) > current) {
+                try {
+                    daysUntil.set(j+1, daysUntil.get(j));
+                    unplannedList.set(j+1, unplannedList.get(j));
+                } catch (Exception e) {
+                    daysUntil.add(daysUntil.get(j+1));
+                    unplannedList.add(unplannedList.get(j+1));
+                } finally {
+                    j--;
+                }
+            }
+            try {
+                daysUntil.set(j+1, current);
+                unplannedList.set(j+1, currentArray);
+            } catch (Exception e) {
+                daysUntil.add(current);
+                unplannedList.add(currentArray);
+            }
+        }
+
+        System.out.println("New: " + daysUntil);
+        System.out.println("New: " + unplannedList);
 
         // Generate Agenda
 
-
     }
+
 }
