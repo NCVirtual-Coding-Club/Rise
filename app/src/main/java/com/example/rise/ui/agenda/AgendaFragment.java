@@ -123,6 +123,15 @@ public class AgendaFragment extends Fragment {
         testArrayListThree.add("2");
         unplannedList.add(testArrayListThree);
 
+        ArrayList<String> testArrayListFour  = new ArrayList<>();
+        testArrayListFour.add("monday");
+        testArrayListFour.add("0");
+        testArrayListFour.add("500");
+        testArrayListFour.add("test");
+        plannedList.add(testArrayListFour);
+
+
+
 
 
 
@@ -171,7 +180,36 @@ public class AgendaFragment extends Fragment {
         System.out.println("New: " + daysUntil);
         System.out.println("New: " + unplannedList);
 
-        // Generate Agenda
+        int plannedListLength = plannedList.size();
+        int unplanneListCounter = 0;
+
+        // Step 2
+
+
+        for (int i = 0; i <= 2400; i+= 15) {
+            boolean foundPlanned = false;
+            for (int c = 0; c < plannedListLength; c++) {
+                if (!plannedList.isEmpty() && plannedList.get(c).get(0) == "monday" && i >= Integer.parseInt(String.valueOf(plannedList.get(c).get(1))) && i <= Integer.parseInt(String.valueOf(plannedList.get(c).get(2)))) {
+                    mondayList.add(plannedList.get(c));
+                    plannedList.remove(c);
+                    foundPlanned = true;
+                }
+
+            }
+            if (!foundPlanned) {
+                try {
+                    mondayList.add(unplannedList.get(unplanneListCounter));
+                    unplanneListCounter ++;
+                } catch (Exception e) {
+                    System.out.println("FUCK");
+                }
+
+            }
+
+        }
+
+
+        System.out.println(mondayList);
 
     }
 
