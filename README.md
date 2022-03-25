@@ -1,5 +1,21 @@
 # Rise for Android
-## Getting Started
+## General Information
+### Inspiration
+
+### What it does
+
+### How we built it
+
+### Challenges we ran into
+
+### Accomplishments that we're proud of
+
+### What we learned
+
+### What's next for Rise
+
+## Development
+### Getting Started
 All development will be through the Android Studio IDE. Please install the latest version of the IDE from the [Android Studio website](https://developer.android.com/studio/index.html). During installation, use the default settings. Install the Android 9.0 (Pie) SDK.
 
 ![image](https://user-images.githubusercontent.com/39242954/152127209-b1c0e257-5b8c-4884-84d0-ebeb02844884.png)
@@ -17,12 +33,12 @@ To open the folder in Android Studio, in Android Studio, click `File`, `Open`, a
 
 After a few minutes, the project will be available in Android Studio.
 
-## Project Syntax
-### IDs: 
+### Project Syntax
+#### IDs: 
 Syntax: `@+id/<component_title>_<activity_title>_<name>`
 
 Example: `@+id/card_home_recommendedActivities`
-### Strings: 
+#### Strings: 
 Syntax: `@string/<activity_title>_<group>_<string_usage>`
 
 Example: `@string/support_emergency_description`
