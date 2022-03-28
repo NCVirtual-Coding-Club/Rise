@@ -13,16 +13,20 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.room.Room;
 
-import com.example.rise.R;
 import com.example.rise.databinding.FragmentHomeBinding;
+import com.example.rise.db.AppDatabase;
+import com.example.rise.db.User;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 
 public class HomeFragment extends Fragment {
 
@@ -46,7 +50,26 @@ public class HomeFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+
+        AppDatabase db = AppDatabase.getDbInstance(this.getContext());
+        List<User> userList = db.userDao().getAllUsers();
+
+
+        /*
+        User user = new User();
+        user.firstName = "Jonathan";
+        user.lastName = "Rogers";
+
+        db.userDao().insertUser(user);
+]
+
+
+         */
+
+
         System.out.println("Test");
+
+
 
 
         // Start: Controls the Welcome Message on the text_home_greetingWelcomeText TextView
@@ -58,7 +81,9 @@ public class HomeFragment extends Fragment {
 
         // gets user's name
         TextView welcomeText = null;
-        String userSName = new String("Jonathan");
+        String userSName = new String("");
+
+        userSName = String.valueOf(userList.get(0).firstName);
         welcomeText = (TextView) view.findViewById(text_home_greetingWelcomeText);
 
         // if there is no name
