@@ -41,5 +41,5 @@
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.example.rise.SettingsFragment"
-        android:label="SettingsFragment" />
+        android:label="Settings" />
 </navigation>
