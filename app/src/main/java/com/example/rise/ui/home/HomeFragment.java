@@ -4,7 +4,6 @@ import static com.example.rise.R.id.home_Settings_button;
 import static com.example.rise.R.id.home_alertCovid19_learnMore;
 import static com.example.rise.R.id.text_home_greetingWelcomeText;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
@@ -16,23 +15,18 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
 import androidx.preference.PreferenceManager;
-import androidx.room.Room;
 
 import com.example.rise.R;
 import com.example.rise.databinding.FragmentHomeBinding;
-import com.example.rise.db.AppDatabase;
-import com.example.rise.db.User;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.List;
 
 public class HomeFragment extends Fragment {
 
@@ -56,9 +50,6 @@ public class HomeFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-
-        AppDatabase db = AppDatabase.getDbInstance(this.getContext());
-        List<User> userList = db.userDao().getAllUsers();
 
 
         /*
