@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -74,6 +75,13 @@ public class AgendaFragment extends Fragment {
             recyclerView.setAdapter(new AgendaRecyclerViewAdapter(PlaceholderContent.ITEMS));
         }
         return view;
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
