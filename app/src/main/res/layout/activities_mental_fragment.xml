@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.activities.mental.ActivitiesMentalFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    app:cardElevation="3dp"
+                    app:cardMaxElevation="3dp"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:checkable="true"
+                    android:clickable="false"
+                    android:focusable="true">
+
+                    <!-- Media -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            app:srcCompat="@drawable/exercise"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="2dp"
+                            android:adjustViewBounds="true"
+                            android:baselineAlignBottom="true"
+                            android:contextClickable="false"
+                            android:cropToPadding="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/exercise" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <!-- Title, secondary and supporting text -->
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Exercise"
+                                android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    app:cardElevation="3dp"
+                    app:cardMaxElevation="3dp"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:checkable="true"
+                    android:clickable="false"
+                    android:focusable="true">
+
+                    <!-- Media -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            app:srcCompat="@drawable/breathe"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="2dp"
+                            android:adjustViewBounds="true"
+                            android:baselineAlignBottom="true"
+                            android:contextClickable="false"
+                            android:cropToPadding="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/breathe" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <!-- Title, secondary and supporting text -->
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Breathing Exercises"
+                                android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    app:cardElevation="3dp"
+                    app:cardMaxElevation="3dp"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:checkable="true"
+                    android:clickable="false"
+                    android:focusable="true">
+
+                    <!-- Media -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            app:srcCompat="@drawable/talking"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="2dp"
+                            android:adjustViewBounds="true"
+                            android:baselineAlignBottom="true"
+                            android:contextClickable="false"
+                            android:cropToPadding="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/talking" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <!-- Title, secondary and supporting text -->
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Talking to a friend, family member, or trusted adult."
+                                android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardElevation="3dp"
+                    app:cardMaxElevation="3dp">
+
+                    <!-- Media -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="2dp"
+                            android:adjustViewBounds="true"
+                            android:baselineAlignBottom="true"
+                            android:contextClickable="false"
+                            android:cropToPadding="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/journaling"
+                            app:srcCompat="@drawable/journaling" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:padding="16dp">
+
+                            <!-- Title, secondary and supporting text -->
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Journaling"
+                                android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="right"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="right"
+                                    android:gravity="right|end"
+                                    android:orientation="horizontal"
+                                    tools:foregroundGravity="right">
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="right"
+                                        android:layout_weight="1"
+                                        android:src="@drawable/ic_baseline_touch_app_24" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardElevation="3dp"
+                    app:cardMaxElevation="3dp">
+
+                    <!-- Media -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="2dp"
+                            android:adjustViewBounds="true"
+                            android:baselineAlignBottom="true"
+                            android:contextClickable="false"
+                            android:cropToPadding="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/sit"
+                            app:srcCompat="@drawable/sit" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:padding="16dp">
+
+                            <!-- Title, secondary and supporting text -->
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sit outside"
+                                android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardElevation="3dp"
+                    app:cardMaxElevation="3dp">
+
+                    <!-- Media -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="2dp"
+                            android:adjustViewBounds="true"
+                            android:baselineAlignBottom="true"
+                            android:contextClickable="false"
+                            android:cropToPadding="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/nap"
+                            app:srcCompat="@drawable/nap" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:padding="16dp">
+
+                            <!-- Title, secondary and supporting text -->
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Take a nap"
+                                android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

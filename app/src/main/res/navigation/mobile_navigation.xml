@@ -12,6 +12,12 @@
         tools:layout="@layout/fragment_learn" />
 
     <fragment
+        android:id="@+id/navigation_agenda"
+        android:name="com.example.rise.ui.agenda.AgendaFragment"
+        android:label="@string/title_agenda"
+        tools:layout="@layout/fragment_agenda" />
+
+    <fragment
         android:id="@+id/navigation_home"
         android:name="com.example.rise.ui.home.HomeFragment"
         android:label="@string/title_home"
@@ -25,7 +31,14 @@
         android:id="@+id/navigation_activities"
         android:name="com.example.rise.ui.activities.ActivitiesFragment"
         android:label="@string/title_activities"
-        tools:layout="@layout/fragment_activities" />
+        tools:layout="@layout/fragment_activities">
+        <action
+            android:id="@+id/action_navigation_activities_to_activitiesPhysicalFragment"
+            app:destination="@id/activitiesPhysicalFragment" />
+        <action
+            android:id="@+id/action_navigation_activities_to_activitiesMentalFragment"
+            app:destination="@id/activitiesMentalFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_support"
@@ -37,7 +50,13 @@
         android:name="com.example.rise.SettingsFragment"
         android:label="Settings" />
     <fragment
-        android:id="@+id/navigation_agenda"
-        android:name="com.example.rise.ui.agenda.AgendaFragment"
-        android:label="@string/title_agenda" />
+        android:id="@+id/activitiesPhysicalFragment"
+        android:name="com.example.rise.ui.activities.physical.ActivitiesPhysicalFragment"
+        android:label="Physical Activities"
+        tools:layout="@layout/activities_physical_fragment" />
+    <fragment
+        android:id="@+id/activitiesMentalFragment"
+        android:name="com.example.rise.ui.activities.mental.ActivitiesMentalFragment"
+        android:label="Mental Activities"
+        tools:layout="@layout/activities_mental_fragment" />
 </navigation>
