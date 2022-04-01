@@ -2,15 +2,15 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "dc5f94b0bc3b16d92c15518afaeeab1d",
+    "identityHash": "88b6e6b07aca780849d5fb5576bde7cb",
     "entities": [
       {
-        "tableName": "Planned",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`uid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `date` TEXT, `start_time` TEXT, `end_time` TEXT, `event_name` TEXT)",
+        "tableName": "planned",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `date` TEXT, `startTime` TEXT, `endTime` TEXT, `eventName` TEXT)",
         "fields": [
           {
-            "fieldPath": "uid",
-            "columnName": "uid",
+            "fieldPath": "id",
+            "columnName": "id",
             "affinity": "INTEGER",
             "notNull": true
           },
@@ -22,26 +22,26 @@
           },
           {
             "fieldPath": "startTime",
-            "columnName": "start_time",
+            "columnName": "startTime",
             "affinity": "TEXT",
             "notNull": false
           },
           {
             "fieldPath": "endTime",
-            "columnName": "end_time",
+            "columnName": "endTime",
             "affinity": "TEXT",
             "notNull": false
           },
           {
             "fieldPath": "eventName",
-            "columnName": "event_name",
+            "columnName": "eventName",
             "affinity": "TEXT",
             "notNull": false
           }
         ],
         "primaryKey": {
           "columnNames": [
-            "uid"
+            "id"
           ],
           "autoGenerate": true
         },
@@ -49,24 +49,24 @@
         "foreignKeys": []
       },
       {
-        "tableName": "Unplanned",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`uid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `due_date` TEXT, `due_time` TEXT, `duration` TEXT, `task_name` TEXT)",
+        "tableName": "unplanned",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `dueDate` TEXT, `dueTime` TEXT, `duration` TEXT, `taskName` TEXT)",
         "fields": [
           {
-            "fieldPath": "uid",
-            "columnName": "uid",
+            "fieldPath": "id",
+            "columnName": "id",
             "affinity": "INTEGER",
             "notNull": true
           },
           {
             "fieldPath": "dueDate",
-            "columnName": "due_date",
+            "columnName": "dueDate",
             "affinity": "TEXT",
             "notNull": false
           },
           {
             "fieldPath": "dueTime",
-            "columnName": "due_time",
+            "columnName": "dueTime",
             "affinity": "TEXT",
             "notNull": false
           },
@@ -78,16 +78,14 @@
           },
           {
             "fieldPath": "taskName",
-            "columnName": "task_name",
+            "columnName": "taskName",
             "affinity": "TEXT",
             "notNull": false
           }
         ],
         "primaryKey": {
-          "columnNames": [
-            "uid"
-          ],
-          "autoGenerate": true
+          "columnNames": [],
+          "autoGenerate": false
         },
         "indices": [],
         "foreignKeys": []
@@ -96,7 +94,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'dc5f94b0bc3b16d92c15518afaeeab1d')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '88b6e6b07aca780849d5fb5576bde7cb')"
     ]
   }
 }
