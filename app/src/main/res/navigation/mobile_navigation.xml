@@ -36,4 +36,8 @@
         android:id="@+id/settingsFragment"
         android:name="com.example.rise.SettingsFragment"
         android:label="Settings" />
+    <fragment
+        android:id="@+id/navigation_agenda"
+        android:name="com.example.rise.ui.agenda.AgendaFragment"
+        android:label="@string/title_agenda" />
 </navigation>

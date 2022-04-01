@@ -2,7 +2,7 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "88b6e6b07aca780849d5fb5576bde7cb",
+    "identityHash": "b0dcf584ad06e8137dce1fb28ca5ad15",
     "entities": [
       {
         "tableName": "planned",
@@ -50,7 +50,7 @@
       },
       {
         "tableName": "unplanned",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `dueDate` TEXT, `dueTime` TEXT, `duration` TEXT, `taskName` TEXT)",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `dueDate` TEXT, `dueTime` TEXT, `duration` TEXT, `taskName` TEXT)",
         "fields": [
           {
             "fieldPath": "id",
@@ -84,8 +84,10 @@
           }
         ],
         "primaryKey": {
-          "columnNames": [],
-          "autoGenerate": false
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
         },
         "indices": [],
         "foreignKeys": []
@@ -94,7 +96,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '88b6e6b07aca780849d5fb5576bde7cb')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'b0dcf584ad06e8137dce1fb28ca5ad15')"
     ]
   }
 }
