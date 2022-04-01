@@ -1,5 +1,6 @@
 package com.example.rise.ui.activities;
 
+import static com.example.rise.R.id.card_activities_mental;
 import static com.example.rise.R.id.card_activities_physical;
 import static com.example.rise.R.id.home_Settings_button;
 import static com.example.rise.R.id.home_alertCovid19_learnMore;
@@ -64,6 +65,13 @@ public class ActivitiesFragment extends Fragment {
         physical.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Navigation.findNavController(view).navigate(R.id.action_navigation_activities_to_activitiesPhysicalFragment);
+            }
+        });
+
+        CardView mental = (CardView) view.findViewById(card_activities_mental);
+        mental.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Navigation.findNavController(view).navigate(R.id.action_navigation_activities_to_activitiesMentalFragment);
             }
         });
 

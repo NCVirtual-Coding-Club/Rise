@@ -129,7 +129,7 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/card_home_agenda"
+                android:id="@+id/card_activities_mental"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="7dp"

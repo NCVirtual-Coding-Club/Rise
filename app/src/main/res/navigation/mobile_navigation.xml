@@ -57,6 +57,6 @@
     <fragment
         android:id="@+id/activitiesMentalFragment"
         android:name="com.example.rise.ui.activities.mental.ActivitiesMentalFragment"
-        android:label="activities_mental_fragment"
+        android:label="Mental Activities"
         tools:layout="@layout/activities_mental_fragment" />
 </navigation>

@@ -40,7 +40,7 @@
                 android:id="@+id/card_activities_physical"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="7dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="7dp"
                 android:checkable="true"
                 android:clickable="false"
@@ -48,28 +48,49 @@
                 app:cardElevation="3dp"
                 app:cardMaxElevation="3dp">
 
-                <!-- Media -->
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:clickable="false"
-                    android:orientation="vertical"
+                    android:orientation="horizontal"
                     android:padding="16dp">
 
                     <!-- Title, secondary and supporting text -->
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Physical Activities"
                         android:textAppearance="?attr/textAppearanceHeadline6" />
 
-                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:orientation="horizontal">
 
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:gravity="right|end"
+                            android:orientation="horizontal"
+                            tools:foregroundGravity="right">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:layout_weight="1"
+                                android:src="@drawable/ic_baseline_touch_app_24" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/card_home_agenda"
+                android:id="@+id/card_activities_mental"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="7dp"
@@ -80,24 +101,45 @@
                 app:cardElevation="3dp"
                 app:cardMaxElevation="3dp">
 
-                <!-- Media -->
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:clickable="false"
-                    android:orientation="vertical"
+                    android:orientation="horizontal"
                     android:padding="16dp">
 
                     <!-- Title, secondary and supporting text -->
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Mental Activities"
                         android:textAppearance="?attr/textAppearanceHeadline6" />
 
-                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:orientation="horizontal">
 
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:gravity="right|end"
+                            android:orientation="horizontal"
+                            tools:foregroundGravity="right">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:layout_weight="1"
+                                android:src="@drawable/ic_baseline_touch_app_24" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
 
