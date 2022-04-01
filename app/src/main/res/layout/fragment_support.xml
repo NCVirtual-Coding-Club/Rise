@@ -35,37 +35,66 @@
                 android:clickable="true"
                 android:focusable="true"
                 app:cardElevation="3dp"
-                app:cardMaxElevation="3dp"
-                tools:ignore="DuplicateSpeakableTextCheck">
+                app:cardMaxElevation="3dp">
 
                 <!-- Media -->
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
+                    android:orientation="horizontal"
                     android:padding="16dp">
 
-                    <!-- Title, secondary and supporting text -->
-                    <TextView
+                    <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/support_suicidehotline_title"
-                        android:textAppearance="?attr/textAppearanceHeadline6" />
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/support_suicidehotline_description"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        android:textSize="14sp" />
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/support_suicidehotline_title"
+                            android:textAppearance="?attr/textAppearanceHeadline6" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/support_suicidehotline_phonenumber"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        android:textSize="14sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/support_suicidehotline_description"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/support_suicidehotline_phonenumber"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|right"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right|end"
+                            android:orientation="horizontal"
+                            tools:foregroundGravity="right">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:layout_weight="1"
+                                android:src="@drawable/ic_baseline_touch_app_24" />
+                        </LinearLayout>
+                    </LinearLayout>
+
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
@@ -90,29 +119,58 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
+                    android:orientation="horizontal"
                     android:padding="16dp">
 
-                    <!-- Title, secondary and supporting text -->
-                    <TextView
+                    <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/support_substance_title"
-                        android:textAppearance="?attr/textAppearanceHeadline6" />
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/support_substance_description"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        android:textSize="14sp" />
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/support_substance_title"
+                            android:textAppearance="?attr/textAppearanceHeadline6" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/support_substance_phonenumber"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        android:textSize="14sp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/support_substance_description"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/support_substance_phonenumber"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|right"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right|end"
+                            android:orientation="horizontal"
+                            tools:foregroundGravity="right">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:layout_weight="1"
+                                android:src="@drawable/ic_baseline_touch_app_24" />
+                        </LinearLayout>
+                    </LinearLayout>
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
@@ -137,29 +195,59 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
+                    android:orientation="horizontal"
                     android:padding="16dp">
 
-                    <!-- Title, secondary and supporting text -->
-                    <TextView
+                    <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/support_emergency_title"
-                        android:textAppearance="?attr/textAppearanceHeadline6" />
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/support_emergency_description"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        android:textSize="14sp" />
+                        <!-- Title, secondary and supporting text -->
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/support_emergency_phonenumber"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        android:textSize="14sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/support_emergency_title"
+                            android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/support_emergency_description"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/support_emergency_phonenumber"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|right"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right|end"
+                            android:orientation="horizontal"
+                            tools:foregroundGravity="right">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:layout_weight="1"
+                                android:src="@drawable/ic_baseline_touch_app_24" />
+                        </LinearLayout>
+                    </LinearLayout>
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
