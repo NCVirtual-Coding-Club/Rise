@@ -9,18 +9,17 @@ import androidx.room.RoomDatabase;
 @Database(entities = {Planned.class, Unplanned.class}, version = 1)
 public abstract class AppDatabase extends RoomDatabase {
 
+    private static AppDatabase instance;
+
     public abstract PlannedDao plannedDao();
     public abstract UnplannedDao unplannedDao();
 
-    private static AppDatabase INSTANCE;
-
-    public static AppDatabase getDbInstance(Context context) {
-        if (INSTANCE == null) {
-            INSTANCE = Room.databaseBuilder(context.getApplicationContext(), AppDatabase.class, "DB_NAME").allowMainThreadQueries().build();
 
 
+    public static synchronized AppDatabase getInstance(Context context) {
+        if (instance == null) {
+            instance = Room.databaseBuilder(context.getApplicationContext(), AppDatabase.class, "app_database").fallbackToDestructiveMigration().build();
         }
-        return INSTANCE;
-
+        return instance;
     }
 }
