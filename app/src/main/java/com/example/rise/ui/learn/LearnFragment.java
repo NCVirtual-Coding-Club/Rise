@@ -1,6 +1,6 @@
 package com.example.rise.ui.learn;
 
-import static com.example.rise.R.id.card_learn_disease;
+import static com.example.rise.R.id.card_learn_aid;
 import static com.example.rise.R.id.card_learn_drugs;
 
 import android.os.Bundle;
@@ -44,10 +44,10 @@ public class LearnFragment extends Fragment {
             }
         });
 
-        CardView diseases = (CardView) view.findViewById(card_learn_disease);
-        diseases.setOnClickListener(new View.OnClickListener() {
+        CardView firstAid = (CardView) view.findViewById(card_learn_aid);
+        firstAid.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Navigation.findNavController(view).navigate(R.id.action_navigation_learn_to_diseasesVaccines);
+                Navigation.findNavController(view).navigate(R.id.action_navigation_learn_to_firstAid2);
             }
         });
     }
