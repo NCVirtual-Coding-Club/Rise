@@ -41,13 +41,14 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder> {
 
         // 00:00
 
-        if (colonIndex >= 2) {
-            AMorPM = "PM";
-            int hour = Integer.parseInt(time.substring(0, 2));
-            int newHour = hour -12;
-            // time.replace(String.valueOf(hour), String.valueOf(newHour));
 
-            time = newHour + time.substring(colonIndex, time.length());
+        if (Integer.parseInt(time.substring(0, colonIndex)) >= 12) {
+                AMorPM = "PM";
+                int hour = Integer.parseInt(time.substring(0, 2));
+                int newHour = hour -12;
+                // time.replace(String.valueOf(hour), String.valueOf(newHour));
+
+                time = newHour + time.substring(colonIndex, time.length());
 
         }
 
@@ -55,6 +56,16 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder> {
             String hour = time.substring(0, colonIndex);
             hour += ":0" + time.substring(colonIndex + 1, time.length() );
             time = hour;
+        }
+
+        colonIndex = time.indexOf(":");
+
+        if (Integer.parseInt(time.substring(0, colonIndex)) == 0) {
+            String hour = time.substring(0, colonIndex);
+            String minute = time.substring(colonIndex, time.length());
+
+            hour = "12";
+            time = "12" + minute;
         }
 
 
