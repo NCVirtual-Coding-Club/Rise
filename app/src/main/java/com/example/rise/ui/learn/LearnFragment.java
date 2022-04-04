@@ -1,6 +1,7 @@
 package com.example.rise.ui.learn;
 
 import static com.example.rise.R.id.card_learn_aid;
+import static com.example.rise.R.id.card_learn_disease;
 import static com.example.rise.R.id.card_learn_drugs;
 import static com.example.rise.R.id.card_learn_living;
 
@@ -39,6 +40,14 @@ public class LearnFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+
+        CardView diseases = (CardView) view.findViewById(card_learn_disease);
+        diseases.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Navigation.findNavController(view).navigate(R.id.action_navigation_learn_to_diseasesVaccines);
+            }
+        });
 
         CardView drugsAlcohol = (CardView) view.findViewById(card_learn_drugs);
         drugsAlcohol.setOnClickListener(new View.OnClickListener() {

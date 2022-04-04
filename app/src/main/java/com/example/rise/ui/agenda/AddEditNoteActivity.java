@@ -6,7 +6,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.EditText;
-import android.widget.NumberPicker;
+import android.widget.TimePicker;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,11 +22,13 @@ public class AddEditNoteActivity extends AppCompatActivity {
             "com.codinginflow.architectureexample.EXTRA_DESCRIPTION";
     public static final String EXTRA_PRIORITY =
             "com.codinginflow.architectureexample.EXTRA_PRIORITY";
+    public static final String EXTRA_TIME =
+            "com.codinginflow.architectureexample.EXTRA_TIME";
 
 
     private EditText editTextTitle;
     private EditText editTextDescription;
-    private NumberPicker numberPickerPriority;
+    private TimePicker numberPickerPriority;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +39,7 @@ public class AddEditNoteActivity extends AppCompatActivity {
         editTextDescription = findViewById(R.id.edit_text_description);
         numberPickerPriority = findViewById(R.id.number_picker_priority);
 
-        numberPickerPriority.setMinValue(1);
-        numberPickerPriority.setMaxValue(10);
+
 
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_close);
 
@@ -48,7 +49,6 @@ public class AddEditNoteActivity extends AppCompatActivity {
             setTitle("Edit Note");
             editTextTitle.setText(intent.getStringExtra(EXTRA_TITLE));
             editTextDescription.setText(intent.getStringExtra(EXTRA_DESCRIPTION));
-            numberPickerPriority.setValue(intent.getIntExtra(EXTRA_PRIORITY, 1));
         } else {
             setTitle("Add Note");
         }
@@ -57,7 +57,7 @@ public class AddEditNoteActivity extends AppCompatActivity {
     private void saveNote() {
         String title = editTextTitle.getText().toString();
         String description = editTextDescription.getText().toString();
-        int priority = numberPickerPriority.getValue();
+        int priority = - (numberPickerPriority.getHour() + numberPickerPriority.getMinute());
 
         if (title.trim().isEmpty() || description.trim().isEmpty()) {
             Toast.makeText(this, "Please insert a title and description", Toast.LENGTH_SHORT).show();
@@ -68,6 +68,7 @@ public class AddEditNoteActivity extends AppCompatActivity {
         data.putExtra(EXTRA_TITLE, title);
         data.putExtra(EXTRA_DESCRIPTION, description);
         data.putExtra(EXTRA_PRIORITY, priority);
+        data.putExtra(EXTRA_TIME, numberPickerPriority.getHour() + ":" + numberPickerPriority.getMinute());
 
         int id = getIntent().getIntExtra(EXTRA_ID, -1);
         if (id != -1) {

@@ -14,12 +14,15 @@ public class Note {
 
     private String description;
 
+    private String time;
+
     private int priority;
 
-    public Note(String title, String description, int priority) {
+    public Note(String title, String description, int priority, String time) {
         this.title = title;
         this.description = description;
         this.priority = priority;
+        this.time = time;
     }
 
     public void setId(int id) {
@@ -40,5 +43,9 @@ public class Note {
 
     public int getPriority() {
         return priority;
+    }
+
+    public String getTime() {
+        return time;
     }
 }

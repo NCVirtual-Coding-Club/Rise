@@ -118,6 +118,7 @@ public class AgendaFragment extends Fragment {
                 intent.putExtra(AddEditNoteActivity.EXTRA_TITLE, note.getTitle());
                 intent.putExtra(AddEditNoteActivity.EXTRA_DESCRIPTION, note.getDescription());
                 intent.putExtra(AddEditNoteActivity.EXTRA_PRIORITY, note.getPriority());
+                intent.putExtra(AddEditNoteActivity.EXTRA_PRIORITY, note.getTime());
                 startActivityForResult(intent, EDIT_NOTE_REQUEST);
             }
         });
@@ -131,8 +132,9 @@ public class AgendaFragment extends Fragment {
             String title = data.getStringExtra(AddEditNoteActivity.EXTRA_TITLE);
             String description = data.getStringExtra(AddEditNoteActivity.EXTRA_DESCRIPTION);
             int priority = data.getIntExtra(AddEditNoteActivity.EXTRA_PRIORITY, 1);
+            String time = data.getStringExtra(AddEditNoteActivity.EXTRA_TIME);
 
-            Note note = new Note(title, description, priority);
+            Note note = new Note(title, description, priority, time);
             noteViewModel.insert(note);
 
             Toast.makeText(getContext(), "Note saved", Toast.LENGTH_SHORT).show();
@@ -147,8 +149,9 @@ public class AgendaFragment extends Fragment {
             String title = data.getStringExtra(AddEditNoteActivity.EXTRA_TITLE);
             String description = data.getStringExtra(AddEditNoteActivity.EXTRA_DESCRIPTION);
             int priority = data.getIntExtra(AddEditNoteActivity.EXTRA_PRIORITY, 1);
+            String time = data.getStringExtra(AddEditNoteActivity.EXTRA_TIME);
 
-            Note note = new Note(title, description, priority);
+            Note note = new Note(title, description, priority, time);
             note.setId(id);
             noteViewModel.update(note);
 

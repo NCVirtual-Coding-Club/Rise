@@ -31,7 +31,35 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder> {
         Note currentNote = notes.get(position);
         holder.textViewTitle.setText(currentNote.getTitle());
         holder.textViewDescription.setText(currentNote.getDescription());
-        holder.textViewPriority.setText(String.valueOf(currentNote.getPriority()));
+        // holder.textViewPriority.setText(String.valueOf(currentNote.getTime()));
+
+
+        String time = currentNote.getTime();
+        int colonIndex = time.indexOf(":");
+        int minuteIndex = time.length() - colonIndex;
+        String AMorPM = "AM";
+
+        // 00:00
+
+        if (colonIndex >= 2) {
+            AMorPM = "PM";
+            int hour = Integer.parseInt(time.substring(0, 2));
+            int newHour = hour -12;
+            // time.replace(String.valueOf(hour), String.valueOf(newHour));
+
+            time = newHour + time.substring(colonIndex, time.length());
+
+        }
+
+        if (minuteIndex < 3){
+            String hour = time.substring(0, colonIndex);
+            hour += ":0" + time.substring(colonIndex + 1, time.length() );
+            time = hour;
+        }
+
+
+        holder.textViewPriority.setText(String.valueOf(time) + " " + AMorPM);
+
     }
 
     @Override
