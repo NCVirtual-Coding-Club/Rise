@@ -2,7 +2,10 @@ package com.example.rise.ui.learn;
 
 import static com.example.rise.R.id.card_learn_aid;
 import static com.example.rise.R.id.card_learn_drugs;
+import static com.example.rise.R.id.card_learn_living;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -49,6 +52,13 @@ public class LearnFragment extends Fragment {
             public void onClick(View v) {
                 Navigation.findNavController(view).navigate(R.id.action_navigation_learn_to_firstAid2);
             }
+        });
+
+        CardView other = (CardView) view.findViewById(card_learn_living);
+        other.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://docs.google.com/document/d/e/2PACX-1vTtL6NWKUNDsru6nVP20psm648sMHVIgmdwVHxSkMWbxDeCuxbIMuUOAb7SxUL96HKhVgpTCvTJlXlS/pub"));
+                startActivity(browserIntent);            }
         });
     }
 
