@@ -9,13 +9,23 @@
         android:id="@+id/navigation_learn"
         android:name="com.example.rise.ui.learn.LearnFragment"
         android:label="@string/title_learn"
-        tools:layout="@layout/fragment_learn" />
+        tools:layout="@layout/fragment_learn" >
+        <action
+            android:id="@+id/action_navigation_learn_to_drugsAlcohol"
+            app:destination="@id/drugsAlcohol" />
+        <action
+            android:id="@+id/action_navigation_learn_to_diseasesVaccines"
+            app:destination="@id/diseasesVaccines" />
+        <action
+            android:id="@+id/action_navigation_learn_to_firstAid2"
+            app:destination="@id/firstAid" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_agenda"
         android:name="com.example.rise.ui.agenda.AgendaFragment"
         android:label="@string/title_agenda"
-        tools:layout="@layout/fragment_agenda" />
+        tools:layout="@layout/agenda_fragment" />
 
     <fragment
         android:id="@+id/navigation_home"
@@ -59,4 +69,19 @@
         android:name="com.example.rise.ui.activities.mental.ActivitiesMentalFragment"
         android:label="Mental Activities"
         tools:layout="@layout/activities_mental_fragment" />
+    <fragment
+        android:id="@+id/drugsAlcohol"
+        android:name="com.example.rise.ui.learn.drugsAlcohol.drugsAlcohol"
+        android:label="Drugs and Alcohol"
+        tools:layout="@layout/drugs_alcohol_fragment" />
+    <fragment
+        android:id="@+id/diseasesVaccines"
+        android:name="com.example.rise.ui.learn.diseasesVaccines.diseasesVaccines"
+        android:label="Diseases and Vaccines"
+        tools:layout="@layout/diseases_vaccines_fragment" />
+    <fragment
+        android:id="@+id/firstAid"
+        android:name="com.example.rise.ui.learn.firstAid.FirstAid"
+        android:label="First Aid"
+        tools:layout="@layout/first_aid_fragment" />
 </navigation>
