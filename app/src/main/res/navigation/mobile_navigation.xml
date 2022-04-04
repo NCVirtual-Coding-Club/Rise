@@ -25,7 +25,7 @@
         android:id="@+id/navigation_agenda"
         android:name="com.example.rise.ui.agenda.AgendaFragment"
         android:label="@string/title_agenda"
-        tools:layout="@layout/fragment_agenda" />
+        tools:layout="@layout/agenda_fragment" />
 
     <fragment
         android:id="@+id/navigation_home"
