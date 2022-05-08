@@ -26,15 +26,16 @@
                     android:layout_height="2dp" />
 
                 <com.google.android.material.card.MaterialCardView
-                    app:cardElevation="3dp"
-                    app:cardMaxElevation="3dp"
+                    android:id="@+id/card_activities_mental_exercise"
                     android:layout_width="350dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="7dp"
                     android:layout_marginBottom="7dp"
                     android:checkable="true"
-                    android:clickable="false"
-                    android:focusable="true">
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardElevation="3dp"
+                    app:cardMaxElevation="3dp">
 
                     <!-- Media -->
 
@@ -44,7 +45,6 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            app:srcCompat="@drawable/exercise"
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
                             android:layout_marginBottom="2dp"
@@ -53,13 +53,14 @@
                             android:contextClickable="false"
                             android:cropToPadding="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/exercise" />
+                            android:src="@drawable/exercise"
+                            app:srcCompat="@drawable/exercise" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:clickable="false"
-                            android:orientation="vertical"
+                            android:orientation="horizontal"
                             android:padding="16dp">
 
                             <!-- Title, secondary and supporting text -->
@@ -70,21 +71,46 @@
                                 android:text="Exercise"
                                 android:textAppearance="?attr/textAppearanceHeadline6" />
 
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="right"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="right"
+                                    android:gravity="right|end"
+                                    android:orientation="horizontal"
+                                    tools:foregroundGravity="right">
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="right"
+                                        android:layout_weight="1"
+                                        android:src="@drawable/ic_baseline_touch_app_24" />
+                                </LinearLayout>
+                            </LinearLayout>
+
                         </LinearLayout>
                     </LinearLayout>
 
                 </com.google.android.material.card.MaterialCardView>
 
+
                 <com.google.android.material.card.MaterialCardView
-                    app:cardElevation="3dp"
-                    app:cardMaxElevation="3dp"
+                    android:id="@+id/card_activities_mental_breathing"
                     android:layout_width="350dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="7dp"
                     android:layout_marginBottom="7dp"
                     android:checkable="true"
-                    android:clickable="false"
-                    android:focusable="true">
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardElevation="3dp"
+                    app:cardMaxElevation="3dp">
 
                     <!-- Media -->
 
@@ -94,7 +120,6 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            app:srcCompat="@drawable/breathe"
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
                             android:layout_marginBottom="2dp"
@@ -103,13 +128,14 @@
                             android:contextClickable="false"
                             android:cropToPadding="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/breathe" />
+                            android:src="@drawable/breathe"
+                            app:srcCompat="@drawable/breathe" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:clickable="false"
-                            android:orientation="vertical"
+                            android:orientation="horizontal"
                             android:padding="16dp">
 
                             <!-- Title, secondary and supporting text -->
@@ -119,6 +145,29 @@
                                 android:layout_height="wrap_content"
                                 android:text="Breathing Exercises"
                                 android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="right"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="right"
+                                    android:gravity="right|end"
+                                    android:orientation="horizontal"
+                                    tools:foregroundGravity="right">
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="right"
+                                        android:layout_weight="1"
+                                        android:src="@drawable/ic_baseline_touch_app_24" />
+                                </LinearLayout>
+                            </LinearLayout>
 
                         </LinearLayout>
                     </LinearLayout>
@@ -232,15 +281,7 @@
                                     android:layout_gravity="right"
                                     android:gravity="right|end"
                                     android:orientation="horizontal"
-                                    tools:foregroundGravity="right">
-
-                                    <ImageView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_gravity="right"
-                                        android:layout_weight="1"
-                                        android:src="@drawable/ic_baseline_touch_app_24" />
-                                </LinearLayout>
+                                    tools:foregroundGravity="right"/>
                             </LinearLayout>
 
                         </LinearLayout>

@@ -160,75 +160,17 @@
                         android:id="@+id/text_home_agendaOne"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/LOREMPISUM"
+                        android:text="AP Enviornmental Science Test           9:00 am\nMeeting with Hannah and Paige          4:30 pm"
                         android:textAppearance="?attr/textAppearanceHeadline6"
                         android:textSize="14sp"
-                        android:visibility="gone"
+                        android:visibility="visible"
+                        app:lineHeight="20dp"
                         tools:visibility="visible" />
 
-                    <TextView
-                        android:id="@+id/text_home_agendaTwo"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/LOREMPISUM"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        android:textSize="14sp"
-                        android:visibility="gone"
-                        tools:visibility="visible" />
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
 
-
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/card_home_activities"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="7dp"
-                android:layout_marginBottom="7dp"
-                android:checkable="true"
-                android:clickable="false"
-                android:focusable="true"
-                app:cardElevation="3dp"
-                app:cardMaxElevation="3dp">
-
-                <!-- Media -->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <!-- Title, secondary and supporting text -->
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/home_activities_title"
-                        android:textAppearance="?attr/textAppearanceHeadline6" />
-
-                    <TextView
-                        android:id="@+id/text_home_activitiesOne"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/LOREMPISUM"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        android:textSize="14sp"
-                        android:visibility="gone"
-                        tools:visibility="visible" />
-
-                    <TextView
-                        android:id="@+id/text_home_activitiesTwo"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/LOREMPISUM"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        android:textSize="14sp"
-                        android:visibility="gone"
-                        tools:visibility="visible" />
-                </LinearLayout>
-
-            </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/card_home_settings"
