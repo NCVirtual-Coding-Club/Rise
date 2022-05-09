@@ -15,8 +15,8 @@
     <string name="support_emergency_description">Other emergency assistance.</string>
     <string name="support_emergency_phonenumber">911</string>
     <string name="home_greeting_greeting">Good evening Jonathan</string>
-    <string name="home_greeting_quote">“Be yourself; everyone else is already taken.”</string>
-    <string name="home_greeting_quoteAuthor">Oscar Wilde</string>
+    <string name="home_greeting_quote">“To handle yourself, use your head; to handle others, use your heart.”</string>
+    <string name="home_greeting_quoteAuthor">Eleanor Roosevelt</string>
     <string name="home_alertCovid19_title">Alert - Outbreak</string>
     <string name="home_alertCovid19_description">Coronavirus disease (COVID-19) pandemic</string>
     <string name="home_alertCovid19_button">Learn More</string>
