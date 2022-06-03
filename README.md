@@ -2,7 +2,7 @@
 ## General Information
 
 ### Video Pitch (Ready, Set, App 2022)
-[![Video Pitch](https://img.youtube.com/vi/CNvMPTPg6lQ/0.jpg)](https://youtu.be/CNvMPTPg6lQ)
+[![Video Pitch](https://img.youtube.com/vi/CNvMPTPg6lQ/0.jpg)](https://youtu.be/iY9SesCPYq8)
 
 ### Inspiration
 Our team wanted to create an app that could be of use to everyone in our community. With the impact of COVID-19 on students and adults and the constant increase of stress and mental health problems with the ongoing national and global crises, it was clear that something needed to be done. Our team was inspired by these problems to create a solution for everyone and anyone to use.
